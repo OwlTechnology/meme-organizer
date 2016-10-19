@@ -12,7 +12,13 @@ class MemeOrganizer{
 
     createWindow(){
         if(!this.window){
-            this.window = new BrowserWindow({width: 800, height: 600});
+            this.window = new BrowserWindow({
+                width: 800,
+                height: 600,
+                webPreferences: {
+                    experimentalFeatures: true
+                }
+            });
             this.window.loadURL(this.targetURL);
 
             this.window.webContents.openDevTools();

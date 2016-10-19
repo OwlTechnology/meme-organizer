@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "main": "main.js",
   "devDependencies": {
-    "electron": "^1.4.3"
+    "electron": "^1.4.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }
